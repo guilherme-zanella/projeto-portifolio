@@ -2,12 +2,12 @@
 
 /* 
   Variáveis para cores:
-  --fundo-principal
-  --texto
-  --texto-inverso
-  --destaque
-  --destaque-inverso
-  --fundo-card
+  --fundo-principal: ;
+  --texto: ;
+  --texto-inverso: ;
+  --destaque: ;
+  --destaque-inverso: ;
+  --fundo-card: ;
 */
 
 :root {
@@ -30,7 +30,17 @@ body {
   line-height: 1.5em;
   background-color: var(--fundo-principal);
   color: var(--texto);
+  transition: all 0.5s;
 }
+
+body.escuro {
+    --fundo-principal: #222222;
+    --texto: #e0e0e0;
+    --texto-inverso: #333333;
+    --destaque: #ff2922;
+    --destaque-inverso: #a71c17;
+    --fundo-card: #444444;
+  }
 
 header {
   background-color: var(--destaque);
