@@ -286,5 +286,18 @@ footer a:hover {
 }
 
 @media screen and (min-width: 923px) {
-  
+  main {
+    grid-template-columns: auto 370px 1fr auto;
+  }
+
+  section#ficha {
+    grid-column: 2/3;
+    height: fit-content;
+    position: sticky;
+    top: 66px;
+  }
+
+  section#detalhes {
+    grid-column: 3/4;
+  }
 }
