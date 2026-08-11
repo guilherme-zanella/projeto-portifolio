@@ -51,7 +51,7 @@ nav#menu a {
   text-decoration: none;
   color: var(--texto-inverso);
   font-weight: 600;
-  padding: 13px 15px;
+  padding: 12px 15px;
   border-radius: 5px;
   transition: background-color 0.3s, color 0.3s;
   font-size: 1.3em;
@@ -73,7 +73,7 @@ section#ficha {
   background-color: var(--fundo-card);
   padding: 20px;
   border-radius: 8px;
-  grid-column: 2 / 3;
+  grid-column: 2;
 }
 
 section#ficha img.foto {
@@ -112,4 +112,33 @@ div#social a {
 
 div#social a:hover {
   color: var(--destaque-inverso);
+}
+
+section#detalhes {
+  grid-column: 2;
+}
+
+article {
+  background-color: var(--fundo-card);
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+article h2 {
+  color: var(--destaque);
+  margin-bottom: 10px;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  margin: auto;
+  aspect-ratio: 16/9;
+}
+
+.video-container iframe {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
 }
